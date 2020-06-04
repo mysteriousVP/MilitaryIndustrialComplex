@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilitaryIndustrialComplexSo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{821E6E86-B6D3-4580-A3D1-280650E5972D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALTests", "DALTests\DALTests.csproj", "{70603530-307D-4DC6-BE49-F294C57F7E4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{821E6E86-B6D3-4580-A3D1-280650E5972D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{821E6E86-B6D3-4580-A3D1-280650E5972D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{821E6E86-B6D3-4580-A3D1-280650E5972D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70603530-307D-4DC6-BE49-F294C57F7E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70603530-307D-4DC6-BE49-F294C57F7E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70603530-307D-4DC6-BE49-F294C57F7E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70603530-307D-4DC6-BE49-F294C57F7E4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
