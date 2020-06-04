@@ -9,7 +9,7 @@ namespace DataAccessLayer.Repositories
 {
     public class ProductionStoreRepository : BaseRepository<ProductionStore>, IProductionStoreRepository
     {
-        internal ProductionStoreRepository(MilitaryComplexContex context)
+        internal ProductionStoreRepository(MilitaryComplexContext context)
             : base(context)
         {
         }

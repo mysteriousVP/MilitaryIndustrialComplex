@@ -9,7 +9,7 @@ namespace DataAccessLayer.Repositories
 {
     public class AdminRepository : BaseRepository<Admin>, IAdminRepository
     {
-        internal AdminRepository(MilitaryComplexContex context)
+        internal AdminRepository(MilitaryComplexContext context)
             : base(context)
         {
         }
