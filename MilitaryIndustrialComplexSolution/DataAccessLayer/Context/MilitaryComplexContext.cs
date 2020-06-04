@@ -8,9 +8,8 @@ namespace DataAccessLayer.Context
 {
     public class MilitaryComplexContex : DbContext
     {
-        public DbSet<Admin> Phones { get; set; }
-        public DbSet<ProductionStore> Orders { get; set; }
-​
+        public DbSet<Admin> Admins { get; set; }
+        public DbSet<ProductionStore> ProductionStores { get; set; }
         public MilitaryComplexContex(DbContextOptions options)
             : base(options)
         {
