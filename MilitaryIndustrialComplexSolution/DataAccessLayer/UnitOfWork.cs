@@ -7,11 +7,11 @@ namespace DataAccessLayer
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private MilitaryComplexContex db;
+        private MilitaryComplexContext db;
         private AdminRepository adminRepository;
         private ProductionStoreRepository productionStore;
 
-        public UnitOfWork(MilitaryComplexContex context)
+        public UnitOfWork(MilitaryComplexContext context)
         {
             db = context;
         }
