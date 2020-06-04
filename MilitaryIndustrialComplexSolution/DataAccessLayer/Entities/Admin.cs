@@ -6,6 +6,7 @@ namespace DataAccessLayer.Entities
 {
     public class Admin
     {
+        public int AdminId { get; set; }
         public string Name { get; set; }
         public float Quality { get; set; }
         public string AdminLicense { get; set; }
