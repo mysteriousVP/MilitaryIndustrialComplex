@@ -10,7 +10,7 @@ namespace DataAccessLayer.Context
     {
         public DbSet<Admin> Admins { get; set; }
         public DbSet<ProductionStore> ProductionStores { get; set; }
-        public MilitaryComplexContex(DbContextOptions options)
+        public MilitaryComplexContext(DbContextOptions options)
             : base(options)
         {
 
