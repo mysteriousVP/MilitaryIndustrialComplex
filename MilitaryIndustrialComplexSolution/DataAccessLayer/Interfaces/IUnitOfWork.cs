@@ -6,8 +6,8 @@ namespace DataAccessLayer.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        IOSBBRepository OSBBs { get; }
-        IStreetRepository Streets { get; }
+        IAdminRepository Admin { get; }
+        IProductionStoreRepository ProductionStore { get; }
         void Save();
     }
 }
