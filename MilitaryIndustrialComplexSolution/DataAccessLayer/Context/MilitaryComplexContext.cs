@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DataAccessLayer.Context
 {
-    public class MilitaryComplexContex : DbContext
+    public class MilitaryComplexContext : DbContext
     {
         public DbSet<Admin> Admins { get; set; }
         public DbSet<ProductionStore> ProductionStores { get; set; }
