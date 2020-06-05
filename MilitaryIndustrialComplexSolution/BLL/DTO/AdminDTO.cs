@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace BLL.DTO
 {
-    public class Admin
+    public class AdminDTO
     {
-        
+        public int AdminId { get; set; }
+        public string Name { get; set; }
+        public float Quality { get; set; }
+        public string AdminLicense { get; set; }
     }
 }
