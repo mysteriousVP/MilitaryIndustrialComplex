@@ -10,12 +10,12 @@ namespace CCL.Security
     public static class SecurityContext
     {
         static User User = null;
-​
+
         public static User GetUser()
         {
             return User;
         }
-​
+
         public static void SetUser(User user)
         {
             User = user;
