@@ -13,7 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCL", "CCL\CCL.csproj", "{B47C0920-BE05-409E-8721-F1817C7181F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLLTests", "BLLTests\BLLTests.csproj", "{255514A0-5125-4FBB-8221-CAECFCE47F4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLLTests", "BLLTests\BLLTests.csproj", "{255514A0-5125-4FBB-8221-CAECFCE47F4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportManagerTests", "ReportManagerTests\ReportManagerTests.csproj", "{A960F795-728B-4D8B-A24D-26E8C37335F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{255514A0-5125-4FBB-8221-CAECFCE47F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{255514A0-5125-4FBB-8221-CAECFCE47F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{255514A0-5125-4FBB-8221-CAECFCE47F4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A960F795-728B-4D8B-A24D-26E8C37335F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A960F795-728B-4D8B-A24D-26E8C37335F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A960F795-728B-4D8B-A24D-26E8C37335F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A960F795-728B-4D8B-A24D-26E8C37335F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
