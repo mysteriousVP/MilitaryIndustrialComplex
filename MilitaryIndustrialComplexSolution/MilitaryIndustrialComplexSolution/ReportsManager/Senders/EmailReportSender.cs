@@ -13,7 +13,7 @@ namespace MilitaryIndustrialComplexSolution.ReportsManager
             Console.WriteLine("Email report sender created.");
         }
 
-        public override Report Send()
+        public override Report CreateReport()
         {
             Console.WriteLine("Converting process to email format.");
             return new EmailReport();

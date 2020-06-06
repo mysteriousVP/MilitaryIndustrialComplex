@@ -4,7 +4,7 @@
     {
         public PdfReport()
         {
-            System.Console.WriteLine("Pdf report created and sent.");
+            System.Console.WriteLine("Pdf report created.\n");
         }
     }
 }

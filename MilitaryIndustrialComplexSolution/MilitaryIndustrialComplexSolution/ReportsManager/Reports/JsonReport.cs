@@ -4,7 +4,7 @@
     {
         public JsonReport()
         {
-            System.Console.WriteLine("Json report created and sent.");
+            System.Console.WriteLine("Json report created.\n");
         }
     }
 }

@@ -4,7 +4,7 @@
     {
         public EmailReport()
         {
-            System.Console.WriteLine("Email report created and sent.");
+            System.Console.WriteLine("Email report created.\n");
         }
     }
 }

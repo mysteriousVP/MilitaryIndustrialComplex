@@ -13,7 +13,7 @@ namespace MilitaryIndustrialComplexSolution.ReportsManager
             Console.WriteLine("Json report sender created.");
         }
 
-        public override Report Send()
+        public override Report CreateReport()
         {
             Console.WriteLine("Converting process to json format.");
             return new JsonReport();

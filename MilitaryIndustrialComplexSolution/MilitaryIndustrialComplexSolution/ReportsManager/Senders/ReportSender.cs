@@ -15,6 +15,6 @@ namespace MilitaryIndustrialComplexSolution.ReportsManager
         }
 
         // fabric method 
-        abstract public Report Send();
+        abstract public Report CreateReport();
     }
 }

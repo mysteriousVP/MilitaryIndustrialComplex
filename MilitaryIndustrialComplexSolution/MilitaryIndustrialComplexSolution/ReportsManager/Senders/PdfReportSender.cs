@@ -12,7 +12,7 @@ namespace MilitaryIndustrialComplexSolution.ReportsManager
             Console.WriteLine("Pdf report sender created.");
         }
 
-        public override Report Send()
+        public override Report CreateReport()
         {
             Console.WriteLine("Converting process to pdf format.");
             return new PdfReport();
