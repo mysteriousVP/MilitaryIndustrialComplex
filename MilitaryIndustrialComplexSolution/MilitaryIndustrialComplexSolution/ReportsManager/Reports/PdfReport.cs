@@ -4,6 +4,7 @@
     {
         
         public PdfReport()
+            : base(true)
         {
             System.Console.WriteLine("Pdf report created.\n");
         }
