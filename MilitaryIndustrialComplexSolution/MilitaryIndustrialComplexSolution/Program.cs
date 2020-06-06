@@ -13,7 +13,7 @@ namespace MilitaryIndustrialComplexSolution
             string pdfData = "Pdf data";
 
             ReportFacade facade = new ReportFacade(new EmailReportSender(emailData),
-                new JsonReportSender(jsonData), new PdfReportSender(pdfData));
+               null, new PdfReportSender(pdfData));
 
             ReportClient client = new ReportClient();
             client.CreateReports(facade);

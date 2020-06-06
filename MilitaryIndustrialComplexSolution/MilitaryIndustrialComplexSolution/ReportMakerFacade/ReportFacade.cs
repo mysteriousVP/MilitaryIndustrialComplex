@@ -19,12 +19,6 @@ namespace MilitaryIndustrialComplexSolution.ReportMakerFacade
             this.pdfSender = pdfSender;
         }
 
-        public ReportFacade(EmailReportSender emailSender, JsonReportSender jsonSender)
-        {
-            this.emailSender = emailSender;
-            this.jsonSender = jsonSender;
-        }
-
         public void MakeAllReports()
         {
             if (emailSender == null || jsonSender == null || pdfSender == null)

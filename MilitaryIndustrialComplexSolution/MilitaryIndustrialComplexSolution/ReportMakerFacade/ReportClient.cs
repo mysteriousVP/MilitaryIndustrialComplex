@@ -6,20 +6,23 @@ namespace MilitaryIndustrialComplexSolution.ReportMakerFacade
 {
     public class ReportClient
     {
-        public void CreateReports(ReportFacade facade)
+        public bool CreateReports(ReportFacade facade)
         {
+            bool state;
             try
             {
                 facade.MakeAllReports();
+                state = true;
             }
             catch (NullReferenceException ex)
             {
-                Console.WriteLine($"Exception message: {ex.Message}");
+                throw new NullReferenceException($"Exception message: {ex.Message}");
             }
             finally
             {
                 facade.Stop();
             }
+            return state;
         }
     }
 }
