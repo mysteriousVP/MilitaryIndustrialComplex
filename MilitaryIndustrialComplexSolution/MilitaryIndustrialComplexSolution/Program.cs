@@ -1,4 +1,5 @@
-﻿using MilitaryIndustrialComplexSolution.ReportsManager;
+﻿using MilitaryIndustrialComplexSolution.ReportMakerFacade;
+using MilitaryIndustrialComplexSolution.ReportsManager;
 using System;
 
 namespace MilitaryIndustrialComplexSolution
@@ -7,16 +8,15 @@ namespace MilitaryIndustrialComplexSolution
     {
         static void Main(string[] args)
         {
-            string data = "Hello there!";
-            ReportSender sender = new EmailReportSender(data);
-            Report emailReport = sender.CreateReport();
+            string emailData = "Email data";
+            string jsonData = "Json data";
+            string pdfData = "Pdf data";
 
-            sender = new JsonReportSender(data);
-            Report jsonReport = sender.CreateReport();
+            ReportFacade facade = new ReportFacade(new EmailReportSender(emailData),
+                new JsonReportSender(jsonData), new PdfReportSender(pdfData));
 
-            sender = new PdfReportSender(data);
-            Report pdfReport = sender.CreateReport();
-
+            ReportClient client = new ReportClient();
+            client.CreateReports(facade);
             Console.ReadLine();
         }
     }
