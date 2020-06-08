@@ -1,4 +1,5 @@
-﻿using MilitaryIndustrialComplexSolution.ReportMakerFacade;
+﻿using MilitaryIndustrialComplexSolution.Production;
+using MilitaryIndustrialComplexSolution.ReportMakerFacade;
 using MilitaryIndustrialComplexSolution.ReportsManager;
 using System;
 
@@ -8,15 +9,23 @@ namespace MilitaryIndustrialComplexSolution
     {
         static void Main(string[] args)
         {
-            string emailData = "Email data";
-            string jsonData = "Json data";
-            string pdfData = "Pdf data";
+            RocketProduction rocketProduction = new RocketProduction();
+            WeaponProduction weaponProduction = new WeaponProduction();
 
-            ReportFacade facade = new ReportFacade(new EmailReportSender(emailData),
-               null, new PdfReportSender(pdfData));
+            rocketProduction.ModerateProduction();
+            weaponProduction.ModerateProduction();
 
-            ReportClient client = new ReportClient();
-            client.CreateReports(facade);
+
+
+            //string emailData = "Email data";
+            //string jsonData = "Json data";
+            //string pdfData = "Pdf data";
+
+            //ReportFacade facade = new ReportFacade(new EmailReportSender(emailData),
+            //   null, new PdfReportSender(pdfData));
+
+            //ReportClient client = new ReportClient();
+            //client.CreateReports(facade);
             Console.ReadLine();
         }
     }

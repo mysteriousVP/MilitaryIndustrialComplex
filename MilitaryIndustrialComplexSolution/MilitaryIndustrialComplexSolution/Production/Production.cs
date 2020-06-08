@@ -4,9 +4,9 @@ using System.Text;
 
 namespace MilitaryIndustrialComplexSolution.Production
 {
-    internal abstract class Production
+    public abstract class Production
     {
-        public Production()
+        public void ModerateProduction()
         {
             GetWeaponList();
             ModifyWeaponList();
@@ -19,7 +19,7 @@ namespace MilitaryIndustrialComplexSolution.Production
         public abstract void SaveChanges();
         public virtual void MakeLog()
         {
-            Console.WriteLine("Weapons list change was successful.\n");
+            Console.WriteLine("List change was successful.\n");
         }
     }
 }
