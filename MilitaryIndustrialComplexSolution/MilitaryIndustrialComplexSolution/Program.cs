@@ -1,4 +1,5 @@
-﻿using MilitaryIndustrialComplexSolution.Production;
+﻿using MilitaryIndustrialComplexSolution.MediatorNotifing;
+using MilitaryIndustrialComplexSolution.Production;
 using MilitaryIndustrialComplexSolution.ReportMakerFacade;
 using MilitaryIndustrialComplexSolution.ReportsManager;
 using System;
@@ -9,11 +10,22 @@ namespace MilitaryIndustrialComplexSolution
     {
         static void Main(string[] args)
         {
-            RocketProduction rocketProduction = new RocketProduction();
-            WeaponProduction weaponProduction = new WeaponProduction();
+            ServerMediator mediator = new ServerMediator();
+            Receiver production = new ProductionReceiver(mediator);
+            Receiver productionStore = new ProductionStoreReceiver(mediator);
 
-            rocketProduction.ModerateProduction();
-            weaponProduction.ModerateProduction();
+            mediator.Production = production;
+            mediator.ProductionStore = productionStore;
+
+            productionStore.Send("List of products to be created....");
+            production.Send("List of goods sent to the warehouse....");
+
+
+            //RocketProduction rocketProduction = new RocketProduction();
+            //WeaponProduction weaponProduction = new WeaponProduction();
+
+            //rocketProduction.ModerateProduction();
+            //weaponProduction.ModerateProduction();
 
 
 
