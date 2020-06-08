@@ -15,7 +15,9 @@ namespace ReportManagerTests
             // arrange 
             ServerMediator mediator = new ServerMediator();
             Receiver production = new ProductionReceiver(mediator);
+            Receiver productionStore = new ProductionStoreReceiver(mediator);
             mediator.Production = production;
+            mediator.ProductionStore = productionStore;
 
             // act
             // assert
@@ -28,6 +30,8 @@ namespace ReportManagerTests
             // arrange 
             ServerMediator mediator = new ServerMediator();
             Receiver productionStore = new ProductionStoreReceiver(mediator);
+            Receiver production = new ProductionReceiver(mediator);
+            mediator.Production = production;
             mediator.ProductionStore = productionStore;
 
             // act
