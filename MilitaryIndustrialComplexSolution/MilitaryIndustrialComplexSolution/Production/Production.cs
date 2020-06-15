@@ -4,6 +4,7 @@ using System.Text;
 
 namespace MilitaryIndustrialComplexSolution.Production
 {
+    // abstaract Template class
     public abstract class Production
     {
         public void ModerateProduction()

@@ -4,6 +4,7 @@ using System.Text;
 
 namespace MilitaryIndustrialComplexSolution.Production
 {
+    // concrete WeaponProduction realization of Template
     public class WeaponProduction : Production
     {
         public override void GetWeaponList()
